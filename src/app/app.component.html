@@ -1,0 +1,13 @@
+<div class="min-h-[91vh]">
+  <ng-container *ngIf="user">
+    <app-navbar></app-navbar>
+    <app-home-page></app-home-page>
+  </ng-container>
+  <ng-container *ngIf="!user">
+    <app-auth></app-auth>
+  </ng-container>
+</div>
+<div>
+<!-- <app-footer/> -->
+</div>
+

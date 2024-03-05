@@ -1,0 +1,33 @@
+
+<mat-card class="example-card" >
+    <!-- <mat-card-header>
+      <div mat-card-avatar class="example-header-image"></div>
+      <mat-card-title>Shiba Inu</mat-card-title>
+      <mat-card-subtitle>Dog Breed</mat-card-subtitle>
+    </mat-card-header> -->
+    <img class="max-h-[400px]"  mat-card-image src="https://images.pexels.com/photos/70497/pexels-photo-70497.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="Photo of a Shiba Inu">
+    <mat-card-content>
+      <p class="caption">
+        Fries and Burger on Plate
+      </p>
+    </mat-card-content>
+    <mat-card-actions class="flex justify-between">
+      <div >
+        <button mat-icon-button aria-label="Example icon button with a favorite icon">
+          <mat-icon>favorite</mat-icon>
+        </button>
+        <button (click)="handleOpenEditReciepeForm()"  mat-icon-button aria-label="Example icon button with a edit icon">
+          <mat-icon>edit</mat-icon>
+        </button>
+        <button mat-icon-button aria-label="Example icon button with a share icon">
+          <mat-icon>share</mat-icon>
+        </button>
+      </div>
+      <div>
+        <button mat-icon-button class="ml-auto" aria-label="Example icon button with a delete icon">
+          <mat-icon>delete</mat-icon>
+        </button>
+      </div>
+    </mat-card-actions>
+  </mat-card>
+  

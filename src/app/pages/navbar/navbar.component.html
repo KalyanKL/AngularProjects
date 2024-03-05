@@ -1,0 +1,35 @@
+
+<p>
+    <mat-toolbar class="flex items-center justify-between custom-toolbar" color="primary">
+        <div class="logo-container">
+          <button mat-icon-button class="example-icon" aria-label="Example icon-button with menu icon">
+            <mat-icon>menu</mat-icon>
+          </button>
+          <img src="https://cdn-icons-png.flaticon.com/128/1695/1695521.png" class="logo" alt="Foodie Faster Logo">
+          <span class="logo-text">Foodie Faster</span>
+        </div>
+        <div class="search-container">
+          <div class="search-box">
+            <input class="search-input" matInput placeholder="Search for dishes...">
+            <button class="search-button" mat-button aria-label="Search">
+              <mat-icon>search</mat-icon>
+            </button>
+          </div>
+        </div>
+        <div class="flex items-center">
+          <button mat-icon-button class="example-icon" aria-label="Cart">
+            <mat-icon>shopping_cart</mat-icon>
+          </button>
+          <button mat-icon-button class="example-icon" aria-label="Favorites">
+            <mat-icon>favorite</mat-icon>
+          </button>
+          <button mat-icon-button class="example-icon" aria-label="Profile">
+            <mat-icon>person</mat-icon>
+          </button>
+          <button mat-button *ngIf="user" (click)="handleLogOut()">
+            {{user.fullName}}
+          </button>
+        </div>
+      </mat-toolbar>
+      
+  </p>

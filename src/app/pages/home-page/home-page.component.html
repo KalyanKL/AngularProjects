@@ -1,0 +1,19 @@
+<div class="pb-5">
+<div class="flex justify-center flex-wrap gap-10">
+    @for(item of reciepes;track 1){
+    <app-reciepe-card/>
+    }
+    @empty{
+        <div>
+            No Reciepe List
+        </div>
+    }
+</div>
+<div class="fixed bottom-10 right-10">
+
+    <button (click)="handleOpenCreateReciepeForm()" mat-fab color="warn" >
+        <mat-icon>add</mat-icon>
+    </button>
+</div>
+
+</div>

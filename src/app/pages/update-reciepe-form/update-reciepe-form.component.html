@@ -1,0 +1,42 @@
+<h1 class="text-center pt-5 color-red">Update Reciepe:2</h1>
+<form  class="w-[27rem] p-6 rounded-lg shadow-md">
+    <div class="mb-4">
+        <mat-form-field class="w-full">
+            <mat-label class="text-gray-100">Title</mat-label>
+            <input matInput placeholder="Enter your fav item.." name="title" 
+            value="reciepeItem.title"
+            [(ngModel)]="reciepeItem.title"
+            class="py-2 px-3 text-gray-00 mt-1 focus:shadow-outline" >
+        </mat-form-field>
+    </div>
+    <div class="mb-4">
+        <mat-form-field class="w-full">
+            <mat-label class="text-gray-100">Description</mat-label>
+            <input matInput placeholder="Description..." name="description" 
+            value="reciepeItem.description"
+            [(ngModel)]="reciepeItem.description"
+            class="py-2 px-3 text-gray-00 mt-1 focus:shadow-outline" >
+        </mat-form-field>
+    </div>
+    <div class="mb-4">
+        <mat-radio-group name="foodType" [(ngModel)]="reciepeItem.foodType" 
+        value="reciepeItem.foodType"
+        aria-label="Select an option">
+            <mat-radio-button value="veg">Vegetarian</mat-radio-button>
+            <mat-radio-button value="non-veg">Non-Vegetarian</mat-radio-button>
+        </mat-radio-group>
+    </div>
+    <div class="mb-4">
+        <mat-form-field class="w-full">
+            <mat-label class="text-gray-100">Image</mat-label>
+            <input matInput placeholder="Image URL..." name="image"
+            value="reciepeItem.image" 
+            [(ngModel)]="reciepeItem.image"
+            class="py-2 px-3 text-gray-00 mt-1 focus:shadow-outline" >
+        </mat-form-field>
+    </div>
+
+    <div>
+        <button mat-raised-button color="primary" type="submit">Update</button>
+    </div>
+</form>
